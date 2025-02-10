@@ -1,0 +1,14 @@
+--What is Redis?
+Redis (Remote Dictionary Server) is an in-memory key-value database that provides ultra-fast data access.
+It stores data in RAM, making it much faster than traditional databases that rely on disk storage.
+
+--Redis Communication & Protocol
+Redis runs on its default port 6379 where it listens for client requests.
+Communication between clients and the Redis server happens over the TCP protocol.
+Redis enforces communication through Redis Serialization Protocol (RESP), ensuring that all commands are properly structured.
+
+
+--How Redis Works?
+Clients send commands (like SET key value or GET key) to the Redis server.
+The server parses these commands and performs operations in memory.
+Responses are sent back in a specific format defined by RESP.
